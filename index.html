@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ms238 Webtools</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131313'/%3E%3Cpath d='M18 42V20h7l7 10 7-10h7v22h-7V31l-5 7h-4l-5-7v11z' fill='%235e9fe8'/%3E%3Ctext x='32' y='55' text-anchor='middle' font-family='Arial,sans-serif' font-size='10' font-weight='700' fill='%23f5f5f7'%3E238%3C/text%3E%3C/svg%3E">
 <style>
   :root {
     --canvas: #131313;
@@ -150,11 +151,6 @@
   .card:nth-child(1) { animation-delay: .05s }
   .card:nth-child(2) { animation-delay: .12s }
   .card:nth-child(3) { animation-delay: .19s }
-  .card:nth-child(4) { animation-delay: .26s }
-  .card:nth-child(5) { animation-delay: .33s }
-  .card:nth-child(6) { animation-delay: .40s }
-  .card:nth-child(7) { animation-delay: .47s }
-  .card:nth-child(8) { animation-delay: .54s }
   @keyframes rise { to { opacity: 1; transform: translateY(0); } }
   .card:hover {
     transform: translateY(-4px);
@@ -222,8 +218,7 @@
     <div class="nav-links">
       <a href="#tools">Tools</a>
       <a href="#tools">Karten</a>
-      <a href="#tools">Kalender</a>
-      <a href="#tools">Rechner</a>
+      <a href="#tools">Daten</a>
     </div>
   </div>
 </nav>
@@ -231,7 +226,7 @@
 <header class="hero wrap">
   <span class="hero-badge"><span class="dot"></span>Sie befinden sich auf ms238</span>
   <h1>Alle Werkzeuge.<br><span class="grad">Ein Ort.</span></h1>
-  <p>Eine kuratierte Sammlung interaktiver Webtools für ms238 – schnell, übersichtlich und direkt im Browser nutzbar.</p>
+  <p>Eine kuratierte Sammlung interaktiver Webtools – schnell, übersichtlich und direkt im Browser nutzbar.</p>
 </header>
 
 <main class="wrap">
@@ -243,8 +238,6 @@
     <div class="chips" role="group" aria-label="Kategorien">
       <button class="chip active" data-cat="alle">Alle</button>
       <button class="chip" data-cat="karten">Karten</button>
-      <button class="chip" data-cat="kalender">Kalender</button>
-      <button class="chip" data-cat="rechner">Rechner</button>
       <button class="chip" data-cat="daten">Daten</button>
     </div>
   </div>
@@ -256,7 +249,7 @@
         <span class="tag">Karten</span>
       </div>
       <h3>PortableMapViewer</h3>
-      <p>PortableMapViewer für Sachsen auf ms238 – Karten und Geodaten direkt im Browser ansehen.</p>
+      <p>Karten und Geodaten für Sachsen direkt im Browser ansehen.</p>
       <span class="open">Öffnen <span aria-hidden="true">→</span></span>
     </a>
 
@@ -266,67 +259,17 @@
         <span class="tag">Daten</span>
       </div>
       <h3>Projekt-Manager</h3>
-      <p>Projekt-Manager auf ms238 – Aufgaben, Projekte und Fortschritt zentral im Browser verwalten.</p>
+      <p>Aufgaben, Projekte und Fortschritt zentral im Browser verwalten.</p>
       <span class="open">Öffnen <span aria-hidden="true">→</span></span>
     </a>
 
-    <a class="card" href="https://agrowetter-sachsen.ms238.com" data-cat="karten">
+    <a class="card" href="https://agrowetter-sachsen.ms238.com" data-cat="daten">
       <div class="card-top">
         <span class="icon i-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4 1.9A3.5 3.5 0 0 0 7.5 19h10z"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/></svg></span>
-        <span class="tag">Karten</span>
+        <span class="tag">Daten</span>
       </div>
       <h3>AgroWetter</h3>
-      <p>AgroWetter für Sachsen auf ms238 – Wetterdaten und agrarische Lageinformationen schnell öffnen.</p>
-      <span class="open">Öffnen <span aria-hidden="true">→</span></span>
-    </a>
-
-    <a class="card" href="#" data-cat="kalender">
-      <div class="card-top">
-        <span class="icon i-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-        <span class="tag">Kalender</span>
-      </div>
-      <h3>Aussaat- &amp; Erntekalender</h3>
-      <p>Interaktiver Kalender für Kulturarten – Aussaat- und Erntezeiträume auf einen Blick.</p>
-      <span class="open">Öffnen <span aria-hidden="true">→</span></span>
-    </a>
-
-    <a class="card" href="#" data-cat="rechner">
-      <div class="card-top">
-        <span class="icon i-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></svg></span>
-        <span class="tag">Rechner</span>
-      </div>
-      <h3>Wasserbilanz-Rechner</h3>
-      <p>Bodenwasserhaushalt überschlägig berechnen – mit anpassbaren Parametern.</p>
-      <span class="open">Öffnen <span aria-hidden="true">→</span></span>
-    </a>
-
-    <a class="card" href="#" data-cat="daten">
-      <div class="card-top">
-        <span class="icon i-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 14l4-4 4 3 5-6"/></svg></span>
-        <span class="tag">Daten</span>
-      </div>
-      <h3>Diagramm-Studio</h3>
-      <p>Daten einfügen und in klare, exportierbare Diagramme verwandeln.</p>
-      <span class="open">Öffnen <span aria-hidden="true">→</span></span>
-    </a>
-
-    <a class="card" href="#" data-cat="daten">
-      <div class="card-top">
-        <span class="icon i-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></span>
-        <span class="tag">Daten</span>
-      </div>
-      <h3>CSV-Konverter</h3>
-      <p>Tabellen und Messreihen konvertieren, bereinigen und neu strukturieren.</p>
-      <span class="open">Öffnen <span aria-hidden="true">→</span></span>
-    </a>
-
-    <a class="card" href="#" data-cat="rechner">
-      <div class="card-top">
-        <span class="icon i-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5S12.5 6 12 2c-.5 4-2 5.9-4 7.5S5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
-        <span class="tag">Rechner</span>
-      </div>
-      <h3>Niederschlags-Analyse</h3>
-      <p>Niederschlagsreihen auswerten – Summen, Trends und Trockenphasen erkennen.</p>
+      <p>Wetterdaten und agrarische Lageinformationen für Sachsen schnell öffnen.</p>
       <span class="open">Öffnen <span aria-hidden="true">→</span></span>
     </a>
 
